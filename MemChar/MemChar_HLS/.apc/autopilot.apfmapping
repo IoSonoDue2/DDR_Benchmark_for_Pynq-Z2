@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ddrbenchmark2.hpp" path="/home/due2/Desktop/FPGAs/MemChar/hls/ddrbenchmark2.hpp"/>
+    <originFiles name="ddrbenchmark2.cpp" path="/home/due2/Desktop/FPGAs/MemChar/hls/ddrbenchmark2.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="ddrbenchmark2_testbench.cpp" path="/home/due2/Desktop/FPGAs/MemChar/hls/ddrbenchmark2_testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1671658347237">
+  <ports id="1" name="gmem" type="PortType" coreId="0" bitwidth="64" direction="DirInOut" iftype="IfTypeFifo">
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataInputObjs>getelementptr</dataInputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="sext_ln15_1" type="PortType" coreId="0" bitwidth="61">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="sext_ln15" type="PortType" coreId="0" bitwidth="61">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="35" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="37" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="39" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="42" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="43" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="44" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="45" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="46" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="47" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="48" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="49" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="55" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="56" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="57" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="60" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="63" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="64" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="68" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="119" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="120" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="121" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="122" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="123" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="124" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="-45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@ports.0"/>
+  <edges id="-47" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@ports.0"/>
+  <blocks id="12" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.inc</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i" originalName="i" coreId="1667592275" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="sext_ln15_read" coreId="1655555851" bitwidth="61" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>sext_ln15</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="sext_ln15_1_read" coreId="4294967292" bitwidth="61" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>sext_ln15_1</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="sext_ln15_cast" coreId="48" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="sext_ln15_1_cast" coreId="778514017" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i_write_ln0" coreId="796159852" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="br_ln0" coreId="796159852" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.inc</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="30" name="for.end.exitStub" type="BlockType">
+    <controlInputObjs>for.inc</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="_ln0" coreId="0" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="99" pipe_depth="3" RegionName="access">
+    <basic_blocks id="21" name="for.inc" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.inc.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.inc.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="i_1" lineNumber="15" originalName="i" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." coreId="1673559504" contextFuncName="ddrbenchmark2" bitwidth="10" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="15" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="gmem_addr" lineNumber="15" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." coreId="1673454464" contextFuncName="ddrbenchmark2" bitwidth="64" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="15" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <dataInputObjs>gmem</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>gmem</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="gmem_addr_1" lineNumber="15" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." coreId="304" contextFuncName="ddrbenchmark2" bitwidth="64" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="15" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <dataInputObjs>gmem</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>read</dataOutputObjs>
+        <dataOutputObjs>gmem</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="icmp_ln15" lineNumber="15" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." rtlName="icmp_ln15_fu_97_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="ddrbenchmark2" bitwidth="1" opcode="icmp" m_display="0" m_delay="1.77" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="15" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="add_ln15" lineNumber="15" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." rtlName="add_ln15_fu_103_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ddrbenchmark2" bitwidth="10" opcode="add" m_display="0" m_delay="1.73" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="15" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="br_ln15" lineNumber="15" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." coreId="825368634" contextFuncName="ddrbenchmark2" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="15" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc.split</controlInputObjs>
+        <controlInputObjs>for.end.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="hls/ddrbenchmark2.cpp">
+        <validLinenumbers>15</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="28" name="for.inc.split" type="BlockType">
+      <controlInputObjs>for.inc</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.inc</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="temp_V" lineNumber="17" originalName="temp.V" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="ddrbenchmark2" bitwidth="64" opcode="read" nodeLabel="1.0" m_display="0" m_delay="7.3" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="17" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="gmem_addr_write_ln18" lineNumber="18" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="ddrbenchmark2" opcode="write" nodeLabel="2.0" m_display="0" m_delay="7.3" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="18" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="i_write_ln15" lineNumber="15" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." coreId="0" contextFuncName="ddrbenchmark2" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="15" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln15" lineNumber="15" fileName="hls/ddrbenchmark2.cpp" fileDirectory=".." coreId="0" contextFuncName="ddrbenchmark2" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="hls/ddrbenchmark2.cpp" linenumber="15" fileDirectory="/home/due2/Desktop/FPGAs/MemChar" functionName="ddrbenchmark2"/>
+        <controlInputObjs>for.inc</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="hls/ddrbenchmark2.cpp">
+        <validLinenumbers>17</validLinenumbers>
+        <validLinenumbers>18</validLinenumbers>
+        <validLinenumbers>15</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="icmp_ln15_reg_142">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem_addr_reg_146">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln15_1_cast_reg_137">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="temp_V_reg_151">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_125">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="sext_ln15_cast_reg_132">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <expressionNodes realName="add_ln15_fu_103">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_fu_114">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_52">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln15_fu_97">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln15_1_cast_fu_85">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem_addr_1_fu_119">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln15_cast_fu_81">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln15_store_fu_109">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="temp_V_read_fu_68">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln18_write_fu_73">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_1_load_fu_94">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_89">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioNodes realName="sext_ln15_read_read_fu_56">
+    <nodeIds>5</nodeIds>
+  </ioNodes>
+  <ioNodes realName="sext_ln15_1_read_read_fu_62">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <ioPorts name="gmem">
+    <contents name="read">
+      <nodeIds>24</nodeIds>
+    </contents>
+    <contents name="write">
+      <nodeIds>25</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="sext_ln15">
+    <contents name="read">
+      <nodeIds>5</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="sext_ln15_1">
+    <contents name="read">
+      <nodeIds>6</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="ddrbenchmark2_Pipeline_access" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1003" mMaxLatency="1003">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>12</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="access" mII="1" mDepth="3" mMinTripCount="1000" mMaxTripCount="1000" mMinLatency="1001" mMaxLatency="1001" mType="1">
+      <basicBlocks>21</basicBlocks>
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>30</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

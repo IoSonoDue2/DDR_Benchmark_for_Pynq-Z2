@@ -1,0 +1,129 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec 21 22:32:54 2022
+# Process ID: 30268
+# Current directory: /home/due2/Desktop/FPGAs/MemChar/MemChar_HLS/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/ddrbenchmark2/xsim_script.tcl}
+# Log file: /home/due2/Desktop/FPGAs/MemChar/MemChar_HLS/solution1/sim/verilog/xsim.log
+# Journal file: /home/due2/Desktop/FPGAs/MemChar/MemChar_HLS/solution1/sim/verilog/xsim.jou
+# Running On: Kobra, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 6, Host memory: 16398 MB
+#-----------------------------------------------------------
+source xsim.dir/ddrbenchmark2/xsim_script.tcl
+# xsim {ddrbenchmark2} -autoloadwcfg -tclbatch {ddrbenchmark2.tcl}
+Time resolution is 1 ps
+source ddrbenchmark2.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 101 [0.00%] @ "125000"
+// RTL Simulation : 1 / 101 [0.00%] @ "12185000"
+// RTL Simulation : 2 / 101 [0.00%] @ "24095000"
+// RTL Simulation : 3 / 101 [0.00%] @ "36005000"
+// RTL Simulation : 4 / 101 [0.00%] @ "47915000"
+// RTL Simulation : 5 / 101 [0.00%] @ "59825000"
+// RTL Simulation : 6 / 101 [0.00%] @ "71735000"
+// RTL Simulation : 7 / 101 [0.00%] @ "83645000"
+// RTL Simulation : 8 / 101 [0.00%] @ "95555000"
+// RTL Simulation : 9 / 101 [0.00%] @ "107465000"
+// RTL Simulation : 10 / 101 [0.00%] @ "119375000"
+// RTL Simulation : 11 / 101 [0.00%] @ "131285000"
+// RTL Simulation : 12 / 101 [0.00%] @ "143195000"
+// RTL Simulation : 13 / 101 [0.00%] @ "155105000"
+// RTL Simulation : 14 / 101 [0.00%] @ "167015000"
+// RTL Simulation : 15 / 101 [0.00%] @ "178925000"
+// RTL Simulation : 16 / 101 [0.00%] @ "190835000"
+// RTL Simulation : 17 / 101 [0.00%] @ "202745000"
+// RTL Simulation : 18 / 101 [0.00%] @ "214655000"
+// RTL Simulation : 19 / 101 [0.00%] @ "226565000"
+// RTL Simulation : 20 / 101 [0.00%] @ "238475000"
+// RTL Simulation : 21 / 101 [0.00%] @ "250385000"
+// RTL Simulation : 22 / 101 [0.00%] @ "262295000"
+// RTL Simulation : 23 / 101 [0.00%] @ "274205000"
+// RTL Simulation : 24 / 101 [0.00%] @ "286115000"
+// RTL Simulation : 25 / 101 [0.00%] @ "298025000"
+// RTL Simulation : 26 / 101 [0.00%] @ "309935000"
+// RTL Simulation : 27 / 101 [0.00%] @ "321845000"
+// RTL Simulation : 28 / 101 [0.00%] @ "333755000"
+// RTL Simulation : 29 / 101 [0.00%] @ "345665000"
+// RTL Simulation : 30 / 101 [0.00%] @ "357575000"
+// RTL Simulation : 31 / 101 [0.00%] @ "369485000"
+// RTL Simulation : 32 / 101 [0.00%] @ "381395000"
+// RTL Simulation : 33 / 101 [0.00%] @ "393305000"
+// RTL Simulation : 34 / 101 [0.00%] @ "405215000"
+// RTL Simulation : 35 / 101 [0.00%] @ "417125000"
+// RTL Simulation : 36 / 101 [0.00%] @ "429035000"
+// RTL Simulation : 37 / 101 [0.00%] @ "440945000"
+// RTL Simulation : 38 / 101 [0.00%] @ "452855000"
+// RTL Simulation : 39 / 101 [0.00%] @ "464765000"
+// RTL Simulation : 40 / 101 [0.00%] @ "476675000"
+// RTL Simulation : 41 / 101 [0.00%] @ "488585000"
+// RTL Simulation : 42 / 101 [0.00%] @ "500495000"
+// RTL Simulation : 43 / 101 [0.00%] @ "512405000"
+// RTL Simulation : 44 / 101 [0.00%] @ "524315000"
+// RTL Simulation : 45 / 101 [0.00%] @ "536225000"
+// RTL Simulation : 46 / 101 [0.00%] @ "548135000"
+// RTL Simulation : 47 / 101 [0.00%] @ "560045000"
+// RTL Simulation : 48 / 101 [0.00%] @ "571955000"
+// RTL Simulation : 49 / 101 [0.00%] @ "583865000"
+// RTL Simulation : 50 / 101 [0.00%] @ "595775000"
+// RTL Simulation : 51 / 101 [0.00%] @ "607685000"
+// RTL Simulation : 52 / 101 [0.00%] @ "619595000"
+// RTL Simulation : 53 / 101 [0.00%] @ "631505000"
+// RTL Simulation : 54 / 101 [0.00%] @ "643415000"
+// RTL Simulation : 55 / 101 [0.00%] @ "655325000"
+// RTL Simulation : 56 / 101 [0.00%] @ "667235000"
+// RTL Simulation : 57 / 101 [0.00%] @ "679145000"
+// RTL Simulation : 58 / 101 [0.00%] @ "691055000"
+// RTL Simulation : 59 / 101 [0.00%] @ "702965000"
+// RTL Simulation : 60 / 101 [0.00%] @ "714875000"
+// RTL Simulation : 61 / 101 [0.00%] @ "726785000"
+// RTL Simulation : 62 / 101 [0.00%] @ "738695000"
+// RTL Simulation : 63 / 101 [0.00%] @ "750605000"
+// RTL Simulation : 64 / 101 [0.00%] @ "762515000"
+// RTL Simulation : 65 / 101 [0.00%] @ "774425000"
+// RTL Simulation : 66 / 101 [0.00%] @ "786335000"
+// RTL Simulation : 67 / 101 [0.00%] @ "798245000"
+// RTL Simulation : 68 / 101 [0.00%] @ "810155000"
+// RTL Simulation : 69 / 101 [0.00%] @ "822065000"
+// RTL Simulation : 70 / 101 [0.00%] @ "833975000"
+// RTL Simulation : 71 / 101 [0.00%] @ "845885000"
+// RTL Simulation : 72 / 101 [0.00%] @ "857795000"
+// RTL Simulation : 73 / 101 [0.00%] @ "869705000"
+// RTL Simulation : 74 / 101 [0.00%] @ "881615000"
+// RTL Simulation : 75 / 101 [0.00%] @ "893525000"
+// RTL Simulation : 76 / 101 [0.00%] @ "905435000"
+// RTL Simulation : 77 / 101 [0.00%] @ "917345000"
+// RTL Simulation : 78 / 101 [0.00%] @ "929255000"
+// RTL Simulation : 79 / 101 [0.00%] @ "941165000"
+// RTL Simulation : 80 / 101 [0.00%] @ "953075000"
+// RTL Simulation : 81 / 101 [0.00%] @ "964985000"
+// RTL Simulation : 82 / 101 [0.00%] @ "976895000"
+// RTL Simulation : 83 / 101 [0.00%] @ "988805000"
+// RTL Simulation : 84 / 101 [0.00%] @ "1000715000"
+// RTL Simulation : 85 / 101 [0.00%] @ "1012625000"
+// RTL Simulation : 86 / 101 [0.00%] @ "1024535000"
+// RTL Simulation : 87 / 101 [0.00%] @ "1036445000"
+// RTL Simulation : 88 / 101 [0.00%] @ "1048355000"
+// RTL Simulation : 89 / 101 [0.00%] @ "1060265000"
+// RTL Simulation : 90 / 101 [0.00%] @ "1072175000"
+// RTL Simulation : 91 / 101 [0.00%] @ "1084085000"
+// RTL Simulation : 92 / 101 [0.00%] @ "1095995000"
+// RTL Simulation : 93 / 101 [0.00%] @ "1107905000"
+// RTL Simulation : 94 / 101 [0.00%] @ "1119815000"
+// RTL Simulation : 95 / 101 [0.00%] @ "1131725000"
+// RTL Simulation : 96 / 101 [0.00%] @ "1143635000"
+// RTL Simulation : 97 / 101 [0.00%] @ "1155545000"
+// RTL Simulation : 98 / 101 [0.00%] @ "1167455000"
+// RTL Simulation : 99 / 101 [0.00%] @ "1179365000"
+// RTL Simulation : 100 / 101 [0.00%] @ "1191275000"
+// RTL Simulation : 101 / 101 [100.00%] @ "1203185000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1203245 ns : File "/home/due2/Desktop/FPGAs/MemChar/MemChar_HLS/solution1/sim/verilog/ddrbenchmark2.autotb.v" Line 428
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Dec 21 22:33:01 2022...

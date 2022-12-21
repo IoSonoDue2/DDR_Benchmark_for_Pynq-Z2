@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "ddrbenchmark2",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/due2\/Desktop\/FPGAs\/MemChar\/MemChar_HLS\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "ddrbenchmark2"
+              }]
+          }
+        },
+        {
+          "functionName": "ddrbenchmark2",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/home\/due2\/Desktop\/FPGAs\/MemChar\/MemChar_HLS\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "ddrbenchmark2"
+              }]
+          }
+        }
+      ]
+    }]}
