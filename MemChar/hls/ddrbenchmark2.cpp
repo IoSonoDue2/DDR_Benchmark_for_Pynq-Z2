@@ -9,17 +9,15 @@ void ddrbenchmark2(TYPE* input, TYPE* output, int64_t buf_size) {
 #pragma HLS INTERFACE s_axilite port = buf_size bundle=control
 #pragma HLS INTERFACE s_axilite port = return bundle=control
 
-    TYPE in1_local[buf_size];
+	TYPE temp = 0;
 
-writing:	for(int i=0; i < buf_size; i++){
+access:	for(int i=0; i < buf_size; i++){
 				#pragma HLS PIPELINE
-				in1_local[i] = *(input+i);//scrive l'input in memoria
+				temp = *(input+i);//scrive l'input in memoria
+				*(output+i) =temp;//legge dalla memoria
 			}
 
-reading: 	for(int i=0; i < buf_size; i++){
-				#pragma HLS PIPELINE
-				output[i] = in1_local[i]; //legge dalla memoria e scrive nel buffer di output
-			}
+
 
 return;
 }

@@ -78,7 +78,7 @@ void execTestMultiple(TYPE * ref, TYPE * out, int64_t buffer_size){
 	  rep++;
 	  result = true;
   }
-  std::cout << "averange:" << tot_duration/rep << std::endl;
+  std::cout << "average:" << tot_duration/rep << std::endl;
   rep=0;
 }
 
@@ -90,7 +90,7 @@ void random_test(){
    std::cout  << std::endl;
    std::cout << "************************" << std::endl;
 
-   int64_t buffer_size = 2000;
+   int64_t buffer_size = 4000;
 
    //int64_t array_dim = buffer_size * AP_UINT_FACTOR  //non mi interessa fare conversioni tanto sono interi 512!
 
