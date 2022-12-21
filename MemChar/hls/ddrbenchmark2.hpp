@@ -7,10 +7,12 @@
 #include <iostream>
 
 auto constexpr DATA_WIDTH = 512;
+#define ARRAY_SIZE 4000
+const unsigned int arr_depth = ARRAY_SIZE;
 
 using TYPE = ap_uint<DATA_WIDTH>;
 
-extern void  ddrbenchmark2(TYPE * in1, TYPE * out, int64_t buf_size);
+extern void  ddrbenchmark2(TYPE * in1, TYPE * out);
 
 
 
