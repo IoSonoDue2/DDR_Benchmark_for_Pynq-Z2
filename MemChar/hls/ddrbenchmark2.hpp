@@ -6,8 +6,8 @@
 #include <ap_int.h>
 #include <iostream>
 
-auto constexpr DATA_WIDTH = 512;
-#define ARRAY_SIZE 4000
+auto constexpr DATA_WIDTH = 64;
+#define ARRAY_SIZE 1000
 const unsigned int arr_depth = ARRAY_SIZE;
 
 using TYPE = ap_uint<DATA_WIDTH>;
