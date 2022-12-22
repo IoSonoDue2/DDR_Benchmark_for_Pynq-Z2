@@ -7,7 +7,7 @@
 #include <iostream>
 
 auto constexpr DATA_WIDTH = 64;
-#define ARRAY_SIZE 1000
+#define ARRAY_SIZE 16000
 const unsigned int arr_depth = ARRAY_SIZE;
 
 using TYPE = ap_uint<DATA_WIDTH>;
