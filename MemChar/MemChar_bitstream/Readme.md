@@ -9,5 +9,7 @@ durante il design dell'IP ho riscontrato il seguente errore (mi riferisco ai CRI
 
 cercando l'errore sul web ho riscontrato da diversi forum che si tratta di un refuso presente dalla versione 2017 di vivado e che quindi penso possa essere trascurato.
 
+https://support.xilinx.com/s/question/0D52E00006iI6ogSAC/critical-warning-psu1-parameter-pcwuiparamddrdqstoclkdelay0-has-negative-value-0050?language=en_US
+
 
 
