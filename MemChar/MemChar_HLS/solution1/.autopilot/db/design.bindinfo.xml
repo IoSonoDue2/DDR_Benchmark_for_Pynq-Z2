@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<BindInfo>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln15_fu_97_p2" SOURCE="hls/ddrbenchmark2.cpp:15" VARIABLE="icmp_ln15" MODULE="ddrbenchmark2_Pipeline_access" LOOP="access" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="add_ln15_fu_103_p2" SOURCE="hls/ddrbenchmark2.cpp:15" VARIABLE="add_ln15" MODULE="ddrbenchmark2_Pipeline_access" LOOP="access" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="control_s_axi_U" SOURCE="" VARIABLE="" MODULE="ddrbenchmark2" LOOP="" BUNDLEDNAME="control" DSP="0" BRAM="0" URAM="0"/>
-	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axi_master" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="gmem_m_axi_U" SOURCE="" VARIABLE="" MODULE="ddrbenchmark2" LOOP="" BUNDLEDNAME="gmem" DSP="0" BRAM="0" URAM="0"/>
-</BindInfo>

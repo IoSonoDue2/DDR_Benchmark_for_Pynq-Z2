@@ -1,5 +1,0 @@
-ddrbenchmark2_flow_control_loop_pipe_sequential_init
-ddrbenchmark2_gmem_m_axi
-ddrbenchmark2_control_s_axi
-ddrbenchmark2_Pipeline_access
-ddrbenchmark2

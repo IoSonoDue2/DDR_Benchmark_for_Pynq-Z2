@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/due2/Desktop/FPGAs/MemChar/MemChar_HLS/solution1/./sim/autowrap/testbench/ddrbenchmark2.cpp_pre.cpp.tb.cpp
