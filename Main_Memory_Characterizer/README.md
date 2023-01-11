@@ -1,2 +1,2 @@
-# NECSTCamp
-projects for NECSTCamp
+# Main Memory Characterizer
+for Pynq-Z2
