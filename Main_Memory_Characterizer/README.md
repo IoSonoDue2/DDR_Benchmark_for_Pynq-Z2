@@ -1,2 +1,2 @@
-# Main Memory Characterizer
-for Pynq-Z2
+# Main Memory Characterizer for Pynq-Z2   
+The goal of this project is to design and implement a memory char-acterizer for the PYNQ-Z2 platform using Vitis HLS for the IP blockdesign and Python to develop the host code.  The memory character-izer will be able to analyze the performance characteristics of DDRmemory  modules  of  the  PYNQ-Z2  board,  such  as  access  times  andbandwidth during reading and writing.  The IP block implemented inVitis HLS will be responsible for performing the actual characteriza-tion of the memory, while the host code written in Python will providea user interface for configuring and triggering the characterization pro-cess, as well as displaying the results.
